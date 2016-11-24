@@ -1,0 +1,126 @@
+@import "../../scss/normalize";
+@import "../../scss/variables";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: $gray1;
+	display: flex;
+	flex-direction: column;
+	color: $gray4;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1;
+}
+
+.chat__container {
+	flex: 1 1;
+	display: flex;
+	flex-direction: column;
+	background: $white;
+	width: 50%;
+	max-width: 600px;
+	min-width: 300px;
+	padding: $defaultPadding;
+	margin: $defaultPadding auto;
+}
+
+.counter__container {
+	background: $gray5;
+	padding: $defaultPadding/2;
+	color: $gray4;
+}
+
+.messages__container {
+	display: flex;
+	flex: 1 1;
+	flex-direction: column;
+	overflow-y: auto;
+	align-content: flex-end;
+	justify-content: flex-end;
+	margin: $defaultPadding/2 0;
+}
+
+.messages__ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-right: $defaultPadding/2;
+	height: auto;
+	min-height: 1px;
+}
+
+.message {
+	display: flex;
+	list-style: none;
+	flex-direction: column;
+	padding: $defaultPadding 0;
+	margin-right: $defaultPadding/2;
+	min-height: 50px;
+}
+
+.post__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.post__content {
+	padding: $defaultPadding/2;
+	display: flex;
+	flex-direction: row;
+}
+
+.post__avatar {
+	margin-right: $defaultPadding/2;
+}
+
+.post__image {
+	border-radius: 30px;
+}
+
+.post__content {
+	background: $gray5;
+	flex: 1 1;
+	display: flex;
+	flex-direction: row;
+}
+
+.post__text {
+	flex: 1 1;
+}
+
+.post__time {
+	font-size: 10px;
+	margin-top: $defaultPadding/2;
+	text-align: right;
+}
+
+.message__container {
+
+}
+
+.message__textarea {
+	background: $gray5;
+	padding: $defaultPadding/2;
+	border: none;
+	color: $gray4;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 50px;
+	max-height: 100px;
+	box-sizing: border-box;
+}
+
+.btn {
+	color: $gray4;
+	font-size: 18px;
+	margin-left: $defaultPadding/2;
+}
